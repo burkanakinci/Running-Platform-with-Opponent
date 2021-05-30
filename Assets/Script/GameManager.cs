@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
         rotatingPlatform.Rotate(0f, 0f, 45f * Time.deltaTime, Space.World);
 
         SortCharacter();
-        sorting.text = $"{SortCharacter()}/{character.Count}";
+        sorting.text = $"{SortCharacter()}/{(character.Count+1)}";
 
         if (rotaterIsRot)
             rotater.Rotate(0f, 60f * Time.fixedDeltaTime, 0f, Space.World);
